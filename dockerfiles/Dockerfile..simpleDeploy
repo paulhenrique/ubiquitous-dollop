@@ -11,4 +11,8 @@ RUN yarn install --silent
 
 CMD yarn start
 
-EXPOSE 3000
+RUN yarn add serve
+
+RUN serve build -l 5001
+
+EXPOSE 5001
