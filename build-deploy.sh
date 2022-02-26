@@ -43,5 +43,6 @@ docker cp ${container_name}:/app/build ./builded_application
 
 echo "🚀 Copia os arquivos de build para a pasta"
 cp  ./scripts/* ./builded_application/
-chmod 777  ./builded_application/*
-./builded_application/build_and_start.sh
+
+echo "🚀 Compacta os arquivos"
+tar -czvf deploy.tar.gz builded_application
