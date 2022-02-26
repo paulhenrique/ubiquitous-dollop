@@ -9,9 +9,9 @@ VOLUME ./yarn-cache
 
 RUN yarn install --silent
 
-CMD yarn start
+RUN yarn build
 
-RUN yarn add serve
+RUN yarn add -g serve
 
 RUN serve build -l 5001
 
