@@ -46,3 +46,7 @@ cp  ./scripts/* ./builded_application/
 
 echo "🚀 Compacta os arquivos"
 tar -czvf deploy.tar.gz builded_application
+
+docker stop ${container_name}
+docker rm ${container_name}
+docker rmi ${container_name}
