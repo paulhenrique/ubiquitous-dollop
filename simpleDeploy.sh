@@ -1,4 +1,4 @@
-container_name='docker-react-application'
+container_name='docker-react-application-simpleDeploy'
 
 echo "============================================================"
 echo "🚀 Refazendo build"
