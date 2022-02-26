@@ -1,6 +1,6 @@
 # Pegando localização deste arquivo
 path=`pwd`
-container_name='docker-react-application-simpleDeploy'
+container_name='docker-react-application-simple-deploy'
 port='5001'
 echo "============================================================"
 echo "🚀 Derrubando container existente"
